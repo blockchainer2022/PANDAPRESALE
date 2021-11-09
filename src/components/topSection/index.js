@@ -103,7 +103,7 @@ const TopSection = ({
                     mint(value);
                   }}
                   style={
-                    !account || totalSupply === 3000
+                    !account || totalSupply === 100
                       ? {
                           backgroundColor: "grey",
                           color: "black",
@@ -115,7 +115,7 @@ const TopSection = ({
                   }
                   disabled={!account ? true : false}
                 >
-                  {totalSupply === 3000 ? "All Sold" : "Buy Coochycoo Panda"}
+                  {totalSupply === 100 ? "All Sold" : "Buy Coochycoo Panda"}
                 </Button>
                 <br />
                 <span
@@ -137,7 +137,7 @@ const TopSection = ({
               <p>
                 Total Coochycoo Panda Sold{" "}
                 <span className="linebreak">
-                  {totalSupply}/{3000}
+                  {totalSupply}/{100}
                 </span>
               </p>
               <br />
